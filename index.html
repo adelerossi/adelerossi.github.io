@@ -7,6 +7,7 @@
   <meta name="keywords" content="">
   <meta name="author" content="Adele Rossi">
   <title>Adele Rossi's Portfolio</title>
+  <link href="slides/css/swiper.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -16,8 +17,8 @@
     <header>
       <nav>
         <ul class="menu-nav">
-          <li class="name">Adele Rossi</li>
-          <li><a href="#">Info</a></li>
+          <li class="name">Adele Rossi,</li>
+          <li><button id="myBtn">Info</button></li>
         </ul>
       </nav>
     </header>
@@ -34,36 +35,65 @@
 
       <section>
         <span class="number">1</span>
-        <img src="https://via.placeholder.com/1200x720/09f/fff.png">
-        <h2>Titolo</h2>
-        <span class="more">Learn more</span>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://via.placeholder.com/1200x720/09f/fff.png"></div>
+              <div class="swiper-slide"><img src="https://via.placeholder.com/1200x720/9f0/fff.png"></div>
+              <div class="swiper-slide"><img src="https://via.placeholder.com/1200x720/f09/fff.png"></div>
+              <div class="swiper-slide"><img src="https://via.placeholder.com/1200x720/f90/fff.png"></div>
+              <div class="swiper-slide"><img src="https://via.placeholder.com/1200x720/90f/fff.png"></div>
+              <div class="swiper-slide"><img src="https://via.placeholder.com/1200x720/0f9/fff.png"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        <h2 class="neg">Titolo</h2>
+        <span class="more" onclick="showMore(1)" id="italic1">Learn more</span>
+        <p id="more1" class="more-text">
+          This is my DIV element.
+        </p>
       </section>
 
       <section>
         <span class="number">2</span>
         <img src="https://via.placeholder.com/1200x720/9f0/fff.png">
         <h2>Titolo</h2>
-        <span class="more">Learn more</span>
+        <span class="more" onclick="showMore(2)" id="italic2">Learn more</span>
+        <p id="more2" class="more-text">
+          This is my DIV element.
+        </p>
       </section>
 
       <section class="half-left">
         <span class="number">3</span>
         <img src="https://via.placeholder.com/1200x720/099/fff.png">
         <h2>Titolo</h2>
-        <span class="more">Learn more</span>
+        <span class="more" onclick="showMore(3)" id="italic3">Learn more</span>
+        <p id="more3" class="more-text">
+          This is my DIV element.
+        </p>
       </section>
-
       <section class="half-right">
         <img src="https://via.placeholder.com/1200x720/099/fff.png">
         <h2>Titolo</h2>
-        <span class="more">Learn more</span>
+        <span class="more" onclick="showMore(4)" id="italic4">Learn more</span>
+        <p id="more4" class="more-text">
+          This is my DIV element.
+        </p>
       </section>
 
       <section>
-        <span class="number">3</span>
+        <span class="number">4</span>
         <img src="https://via.placeholder.com/1200x720/99f/fff.png">
         <h2>Titolo</h2>
-        <span class="more">Learn more</span>
+        <span class="more" onclick="showMore(5)" id="italic5">Learn more</span>
+        <p id="more5" class="more-text">
+          This is my DIV element.
+        </p>
       </section>
 
     </main>
@@ -73,16 +103,17 @@
     </div>
   </div>
 
-  <section class="info">
+  <section id="myModal" class="info modal">
+    <span class="close">Close</span>
     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
-    <a href="mailto:adelerossi13@gmail.com">adelerossi[at]gmail.com
+    <a class="contact-link-info" href="mailto:adelerossi13@gmail.com">adelerossi[at]gmail.com
     </a>
     <p>Based in Milan,<br>
       happy to travel anywhere</p>
     <ul>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Behance</a></li>
-      <li><a href="#">Linkedn</a></li>
+      <li><a class="social" href="#">Instagram</a></li>
+      <li><a class="social" href="#">Behance</a></li>
+      <li><a class="social" href="#">Linkedn</a></li>
     </ul>
     <a href="#" class="curriculum">CV download &rarr;</a>
     <p>October 2019 - Ongoin<br>
@@ -102,11 +133,64 @@
       Accademia di Belle Arti, Venice, Italy<br>
       New Technologies for Art</p>
 
-      <div class="close-info">
-        <a href="#">Close</a>
-      </div>
-
   </section>
   
+
+
+
+    <!-- Initialize Modalbox -->
+  <script>
+ 
+      // Select the modal element
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+  </script>
+
+  <!-- Initialize script show more -->
+  <script>
+
+      // Show more button
+      function showMore(n) {
+        var x = document.getElementById("more" + n);
+        var y = document.getElementById("italic" + n);
+        x.classList.toggle('show-text');
+        y.classList.toggle('italic');
+      }
+
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="slides/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction', /* vedere alternative su docs */
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
 </body>
 </html>
