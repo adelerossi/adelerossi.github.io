@@ -133,6 +133,13 @@ h2, .more, .swiper-pagination {
   padding-top: 5px;
 }
 
+.more-text {
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 5px;
+  width: 60%;
+}
+
 
 
 /* INFO */
@@ -144,8 +151,6 @@ h2, .more, .swiper-pagination {
   grid-column: 8 / 9;
   /* background-color: gray; */
 }
-
-
 
 .social {
   text-decoration-line: underline;
