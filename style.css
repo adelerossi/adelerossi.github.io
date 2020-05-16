@@ -17,7 +17,8 @@
 }
 
 body {
-  background-color: #FAFAFA; 
+  /* background-color: #FAFAFA; */
+  background-color: #fff;
 
   font-family: 'Neue Haas Unica', sans-serif;
   font-size: 13px;
