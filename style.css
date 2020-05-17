@@ -21,10 +21,10 @@ body {
   background-color: #fff;
 
   font-family: 'Neue Haas Unica', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 13px;
   padding: 10px;
-  font-weight: bold;
+  
 
 }
 
@@ -110,18 +110,13 @@ main > section {
 
 .number {
   position: absolute;
-  top: 90px;
+  top: 50px;
   left: 0;
   font-size: 10px;
 }
 
 img, video {
-  margin-top: 90px;
-  width: 100%;
-  height: auto;
-}
-
-video {
+  margin-top: 50px;
   width: 100%;
   height: auto;
 }
@@ -135,9 +130,13 @@ h2.neg {
 }
 
 h2, .more, .swiper-pagination {
-  font-size: 13px;
-  line-height: 13px;
+  font-size: 15px;
+  line-height: 15px;
   padding-top: 5px;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .more-text {
@@ -196,6 +195,12 @@ button {
   cursor: pointer;
 }
 
+.more {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .close:hover,
 .close:focus {
   color: black;
@@ -247,6 +252,10 @@ button:focus {
   width: 45%;
   margin-bottom: 20px;
   margin-right: 63%;
+}
+
+.more-text p {
+  margin-bottom: 20px;
 }
 
 .contact-link-info {
