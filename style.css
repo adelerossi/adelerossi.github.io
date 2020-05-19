@@ -89,6 +89,12 @@ main > p {
   padding: 0 32px;
 }
 
+.intro {
+  font-size: 14px;
+  line-height: 20px;
+
+}
+
 
 main > section.half-left {
   grid-column: 1 / 2;
@@ -128,7 +134,7 @@ h2 {
 }
 
 h2.neg {
-  margin-top: -20px;
+  margin-top: -10px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -150,8 +156,8 @@ h2, .swiper-pagination {
 }
 
 .more-text {
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 18px;
   width: 70%;
 }
 
@@ -191,7 +197,7 @@ h2, .swiper-pagination {
 .close {
   color: #000;
   float: right;
-  font-size: 15px;
+  font-size: 12px;
   
 }
 
