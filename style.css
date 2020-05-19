@@ -17,7 +17,9 @@
 }
 
 body {
-  background-color: #FAFAFA; 
+  /* background-color: #FAFAFA; */
+
+  background-color: #fff;
 
   font-family: 'Neue Haas Unica', sans-serif;
   font-size: 12px;
@@ -29,8 +31,6 @@ body {
   
 
 }
-
-
 
 ul {
   list-style: none;
@@ -129,26 +129,29 @@ h2 {
 
 h2.neg {
   margin-top: -20px;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-h2, .more, .swiper-pagination {
+h2, .swiper-pagination {
   font-size: 12px;
   line-height: 15px;
-  padding-top: 0px;
+  
   
 }
 
 .italic {
   font-style: italic;
-  font-size: 15px;
+}
+
+.more {
+  font-size: 12px;
+  padding-top: 5px;
 }
 
 .more-text {
   font-size: 15px;
   line-height: 22px;
-  padding-top: 5px;
   width: 70%;
 }
 
@@ -248,7 +251,7 @@ button:focus {
   font-size: 18px;
   line-height: 20px;
   background-color: rgb(250, 250, 250);
-  padding: 20px;
+  padding: 10px;
   /*
   background-image: url('info.png');
   background-repeat: no-repeat;
@@ -258,18 +261,18 @@ button:focus {
 }
 
 .info p {
-  width: 45%;
+  width: 100%;
   margin-bottom: 20px;
   margin-right: 63%;
 }
 
 .more-text p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-link-info {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .curriculum{
@@ -278,6 +281,8 @@ button:focus {
 
 .text-info-1 {
   margin-top: 20px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 
