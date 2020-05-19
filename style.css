@@ -21,9 +21,11 @@ body {
   background-color: #fff;
 
   font-family: 'Neue Haas Unica', sans-serif;
-  font-size: 14px;
-  line-height: 13px;
+  font-size: 15px;
+  line-height: 25px;
   padding: 10px;
+  font-weight: bold;
+  
   
 
 }
