@@ -17,17 +17,20 @@
 }
 
 body {
-  background-color: #FAFAFA; 
+  background-color: #fff; 
   font-family: 'Neue Haas Unica', sans-serif;
   font-size: 12px;
-  line-height: 25px;
+  letter-spacing:.015em;
+  line-height: 15px;
   padding: 10px;
-  font-weight: bold;
+  font-weight: 400;
+  
   
   
   
 
 }
+
 
 ul {
   list-style: none;
@@ -87,7 +90,7 @@ main > p {
 }
 
 .intro {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
 
 }
@@ -153,9 +156,9 @@ h2, .swiper-pagination {
 }
 
 .more-text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
-  width: 70%;
+  width: 100%;
 }
 
 
