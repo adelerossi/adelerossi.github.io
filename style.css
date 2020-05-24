@@ -88,10 +88,11 @@ main > p,
 main > section, 
 main > p {
   padding: 0 32px;
+  letter-spacing:.015em;
 }
 
-.intro {
-  font-size: 14px;
+main > p {
+  font-size: 12px;
   line-height: 20px;
 
 }
