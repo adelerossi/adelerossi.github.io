@@ -19,17 +19,10 @@
 body {
   background-color: #fff; 
   font-family: 'Neue Haas Unica', sans-serif;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 14px;
   letter-spacing:.015em;
   line-height: 15px;
   padding: 10px;
-  font-weight: bold;
-  
-  
-  
-  
-
 }
 
 
@@ -88,17 +81,12 @@ main > p,
 main > section, 
 main > p {
   padding: 0 32px;
-  letter-spacing:.015em;
-}
-
-main > p {
-  font-size: 12px;
-  line-height: 20px;
-
 }
 
 
-main > section.half-left {
+
+
+/* main > section.half-left {
   grid-column: 1 / 2;
 }
 
@@ -112,18 +100,18 @@ main > section.half-left {
 
 main > section.half-right {
   padding-left: 0;
-}
+} */
 
 main > section {
   position: relative;
 }
 
-.number {
+/* .number {
   position: absolute;
   top: 55px;
   left: 0;
   font-size: 10px;
-}
+} */
 
 img, video {
   margin-top: 60px;
@@ -137,8 +125,9 @@ h2 {
 
 h2.neg {
   margin-top: -10px;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
 }
 
 h2, .swiper-pagination {
@@ -153,7 +142,7 @@ h2, .swiper-pagination {
 }
 
 .more {
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 5px;
 }
 
@@ -237,7 +226,6 @@ button {
   -webkit-appearance: button; /* Fix IOS e SAFARI */
   /* Aspetto grafico */
   border: 0;
-  font-weight: bold;
   background: none;
 }
 
