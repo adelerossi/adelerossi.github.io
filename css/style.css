@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: black;
+}
+::selection {
+  background-color: black; 
+}
+
+body {
+  min-width: 300px;
+  background-color: #fff; 
+  font-family: 'Neue Haas Unica', 'Helvetica', sans-serif;
+  /*letter-spacing:.015em;*/
+  padding: 10px;
+}
+
+body,
+.name h1,
+.project-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+body > .container {
+  width: 100%;
+}
+
+/* GRID */
+
+header {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+
+}
+.name { 
+  grid-column: 1 / 2;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+.description {
+  grid-column: 2 / 3;
+}
+
+.info {
+  grid-column: 3 / 4;
+  text-align: right;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Line */
+
+.line {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  }
+
+main > section {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+
+/* STYLE */
+
+.info a,
+#close-btn,
+.project-more {
+  color: black;
+  text-decoration: none;
+}
+
+.info a:hover,
+.info a:focus,
+.project-more:hover,
+.project-more:focus,
+#close-btn:hover,
+#close-btn:focus {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #212126;
+}
+
+.info a:last-child {
+  margin-left: 10px;
+}
+
+.more-text-link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* CONTENTS */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 15%;
+}
+
+main section {
+  width: 100%;
+  margin-top: 40px;
+}
+
+
+/* swiper */
+
+.swiper-container,
+.swiper-slide img,
+.swiper-slide video {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: "";
+}
+
+/* project */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-title {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.project-more {
+  width: 83px;
+  text-align: right;
+}
+
+.project-text {
+  display: none;
+  flex-grow: 1;
+  width: 40%;
+}
+
+.project .left,
+.project .right {
+  margin-left: 4%;
+}
+
+
+
+/* per rimozione margine a sinistra, sostituire i due precedenti
+.project .left {
+  margin-right: 10px;
+}
+
+.project .right {
+  margin-left: 10px;
+}
+*/
+
+
+/* project-style */
+
+.project-title,
+.project-more {
+  padding: 10px 0 10px;
+}
+
+.show-text {
+  display: inline-block;
+}
+
+.more-btn {
+  color: #212126;
+}
+
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 80;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  line-height: 20px;
+  background-color:#fff;
+  padding: 10px;
+}
+
+.modal > .container {
+  display: grid;
+  grid-gap: 60px 80px;
+  width: 100%;
+  grid-template-columns: 30% 30% 40%;
+}
+
+.modal h2 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.modal section ul,
+.modal section p,
+.modal section > a {
+  padding-left: 4%;
+}
+
+.show-info {
+  display: block;
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.about {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.education {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.education,
+.service-skill {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.education h2,
+.service-skill h2 {
+  font-size: 14px;
+}
+
+
+.contact {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+
+.service-skill {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+
+.modal ul {
+  list-style: none;
+}
+
+.modal li {
+  float: left;
+}
+
+.cv {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.cv:hover,
+.cv:focus {
+  font-style: italic;
+}
+
+.modal a {
+  color: #000;
+}
+
+.mail {
+  display: inline-block;
+}
+
+.social {
+  display: inline-block;
+  padding: 0 5px 10px 0;
+
+}
+
+.skill{
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.modal li:last-child .social{
+  padding-right: 0px;
+}
+
+.get-in-touch {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
+
+
+@media screen and (max-width:600px) {
+
+header {
+  grid-template-columns: 15% 35% 50%;
+}
+
+.about,
+.education,
+.contact,
+.service-skill {
+  grid-column: 2 / 3;
+  grid-row: auto;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+}
+
+.name {
+  grid-column: 1 / 3;
+}
+
+.name,
+.info {
+  position: static;
+}
+
+.description {
+  display: inline-block;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  padding-top: 15px;
+}
+
+.project .left,
+.project .right {
+  width: 100%;
+  margin-left: 0;
+}
+
+.project .right {
+  padding-top: 15px;
+}
+
+body,
+.name h1,
+.project-title {
+  font-size: 13px;
+}
+
+.modal h2 {
+  font-size: 16px;
+}
+span.hide {
+  display: none;
+}
