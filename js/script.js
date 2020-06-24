@@ -4,19 +4,19 @@ var swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  /*
+  autoplay: {
+    delay: 5000,
+  },
+  */
 });
 
 /* Read more */
-function showMore(n,m = 0) {
+function showMore(n) {
   var x = document.getElementById("more-text-" + n);
   var y = document.getElementById("more-btn-" + n);
   x.classList.toggle("show-text");
   y.classList.toggle("more-btn");
-
-  if (m > 0) {
-    var x2 = document.getElementById("more-text-" + m);
-    x2.classList.toggle("show-text");
-  }
 }
 
 /* Modal */

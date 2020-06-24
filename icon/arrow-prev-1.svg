@@ -1,0 +1,15 @@
+<svg id="b1fc73a6-d045-48d1-85d2-c86925dbbf1b" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 34 30">
+  <defs>
+    <style>
+      .e4444101-6eea-46d3-be28-82d7f2699c57 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="e4444101-6eea-46d3-be28-82d7f2699c57" x1="32.57" y1="15.34" x2="5.43" y2="15.34"/>
+    <polyline class="e4444101-6eea-46d3-be28-82d7f2699c57" points="15.61 5.16 5.43 15.34 14.93 24.84 5.43 15.34"/>
+  </g>
+</svg>

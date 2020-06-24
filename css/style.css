@@ -151,12 +151,12 @@ main section {
 
 .swiper-button-next {
   right: 0;
-  cursor: url('../icon/arrow-next.svg'), auto;
+  cursor: url('../icon/arrow-next-1.svg'), auto;
 }
 
 .swiper-button-prev {
   left: 0;
-  cursor: url('../icon/arrow-prev.svg'), auto;
+  cursor: url('../icon/arrow-prev-1.svg'), auto;
 }
 
 .swiper-button-next:after,
@@ -171,6 +171,18 @@ main section {
   width: 100%;
 }
 
+.header {
+  display: flex;
+  width: 100%;
+}
+
+.proj-text {
+  width: 100%;
+  display: none;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
 .project-title {
   width: 50%;
   flex-grow: 1;
@@ -182,17 +194,17 @@ main section {
 }
 
 .project-text {
-  display: none;
   flex-grow: 1;
-  width: 40%;
+  width: calc(50% - 10px);
 }
 
-.project .left,
 .project .right {
-  margin-left: 4%;
+  margin-left: 10px;
 }
 
-
+.project .left {
+  margin-right: 10px;
+}
 
 /* per rimozione margine a sinistra, sostituire i due precedenti
 .project .left {
@@ -213,7 +225,7 @@ main section {
 }
 
 .show-text {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .more-btn {
