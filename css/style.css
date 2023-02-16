@@ -8,6 +8,10 @@ p {
   padding-bottom: 5px;
 }
 
+header.hide {
+  display: none;
+}
+
 ::-moz-selection {
   background-color: black;
 }

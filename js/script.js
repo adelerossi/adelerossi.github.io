@@ -20,14 +20,18 @@ function showMore(n) {
 }
 
 /* Modal */
-    var modal = document.getElementById("info");
-    var btnOpen = document.getElementById("info-btn");
-    var btnClose = document.getElementById("close-btn");
-    
-    btnOpen.onclick = function () {
-        modal.classList.toggle("show-info");
-    };
+var modal = document.getElementById("info");
+var btnOpen = document.getElementById("info-btn");
+var btnClose = document.getElementById("close-btn");
 
-    btnClose.onclick = function () {
-        modal.classList.toggle("show-info");
-    };
+btnOpen.onclick = function () {
+    const header = document.getElementById('header')
+    header.classList.add('hide')
+    modal.classList.toggle("show-info");
+};
+
+btnClose.onclick = function () {
+    const header = document.getElementById('header')
+    header.classList.remove('hide')
+    modal.classList.toggle("show-info");
+};
