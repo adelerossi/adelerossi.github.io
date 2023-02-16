@@ -359,8 +359,7 @@ main section {
 }
 
 .project-text a {
-  color: red;
-  text-decoration: underline;
+  color: #242426;
 }
 
 @media screen and (max-width:600px) {
