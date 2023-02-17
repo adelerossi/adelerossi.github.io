@@ -6,6 +6,7 @@
 
 p {
   padding-bottom: 0px;
+
 }
 
 header.hide {
@@ -358,9 +359,14 @@ main section {
   padding-bottom: 0;
 }
 
+/* nuove */
+
 .project-text a {
-  color: #182625;
+  text-decoration: underline;
 }
+
+
+/* nuove-fine */
 
 @media screen and (max-width:600px) {
 
