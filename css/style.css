@@ -95,7 +95,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  margin: 30px 15%;
+  margin: 0px 15%;
 }
 
 main section {
