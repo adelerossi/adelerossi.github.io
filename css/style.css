@@ -5,7 +5,7 @@
 }
 
 p {
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 header.hide {
@@ -95,7 +95,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  margin: 0 15%;
+  margin: 30px 15%;
 }
 
 main section {
@@ -359,7 +359,7 @@ main section {
 }
 
 .project-text a {
-  color: #242426;
+  color: #595959;
 }
 
 @media screen and (max-width:600px) {
@@ -395,6 +395,7 @@ main section {
       grid-column: 1 / 4;
       grid-row: 2 / 3;
       padding-top: 15px;
+
     }
 
     .project .left,
